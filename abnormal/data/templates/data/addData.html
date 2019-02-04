@@ -1,0 +1,13 @@
+<form  method = 'POST'>
+    {%csrf_token%}
+    <label>MRN</label>
+    {{form.mrn}}<br /><br />
+    <label>disc</label>
+    {{form.disc}}<br/><br/>
+    <label>text</label>
+
+    {{form.text}}
+    <input type="submit" value="Submit">
+
+
+</form>

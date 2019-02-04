@@ -1,0 +1,18 @@
+{% if dataList%}
+<ul>
+<p>Rendering</p>
+    {%for x in dataList%}
+    <li>
+
+        <a href = "{% url 'detail' x.id%}">{{x.mrn}}</a><br />
+        {{x.text}}<br />
+        
+        {{x.disc}}
+        <hr>
+
+    </li>
+{%endfor%}
+{%else%}
+<p>No Data yet !!</p>
+</ul>
+{%endif %}
